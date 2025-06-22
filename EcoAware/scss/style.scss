@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+$background-color: #99dde1;
+$primary-color: #1e4449cc;
+$box-shadow-color:#656363 0px 0px 10px;
+$section-background-color: rgba(82, 230, 247, 0.8);
+$button-background-color: rgba(30, 73, 49, 0.8);
+$button-text-color: rgba(142, 255, 161, 0.85);
+$button-border-color: 1px solid #065b64da;
+
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    margin:0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: $background-color;
+    color:$primary-color;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    margin:1%;
+}
+.header .logo {
+    width: 150px;
+    height: auto;
+    position:relative;
+    justify-content: left;
+    margin: 2%;
+    display: block;
+    float: left;
+    border-radius: 10px;
+    box-shadow: $box-shadow-color;
+    transition: transform 0.3s ease;
+}
+.form-container {
+    background-color: #02625ca5;
+    width: fit-content;
+    margin: 3%;
+    padding: 3%;
+    border-radius: 10px;
+    box-shadow: $box-shadow-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    text-align: left;
+
+}
+.form-kwh-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: $box-shadow-color;
+    margin-bottom: 1%;
+    display: block;
+    background-image: url('../img/Factory-polluting.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+.form-km-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: $box-shadow-color;
+    margin-bottom: 1%;
+    display: block;
+    background-image: url('../img/Traffic-jam.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+#carbon-foot-print {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 80%;
+    max-width: 1200px;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: $box-shadow-color;
+}
+
+.kwh-container {
+    background-color: $section-background-color;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height:90%;
+    box-shadow: $box-shadow-color;
+    border-radius: 10px;
+    padding: 3%;
+    margin:3%;
+}
+.km-container {
+    background-color: $section-background-color;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height:90%;
+    box-shadow:$box-shadow-color;
+    border-radius: 10px;
+    padding: 3%;
+    margin:3%;
+}
+.total-emissions-container {
+    background-color: $section-background-color;
+    background-image: url('../img/EcoAware-logo.png');
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height:90%;
+    box-shadow: $box-shadow-color;
+    border-radius: 10px;
+    padding: 2%;
+}
+.form-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: $box-shadow-color;
+    margin-bottom: 1rem;
+}
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: $button-border-color;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.submit{
+    margin: 1% 1%;
+    padding: 0.5rem 1rem;
+    background-color: $button-background-color;
+    color:$button-text-color;
+    border-radius: 10px;
+    border: $button-border-color;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.submit:hover {
+    background-color: $button-text-color;
+    color: $button-background-color;
+    transform: scale(1.05);
+    border:#0cd9efda 1px solid;
+}
+.output {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: $box-shadow-color;
+    font-weight: bold;
+    color: $primary-color;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+.footer {
+    display: block;
+    width:100%;
+    height: auto;
+    position:sticky;
+    margin-bottom: 0;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace !important;
+    padding: 1rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 0.8rem; 
+    color: rgb(0, 255, 208);
+    text-shadow: #99dde1 0px 0px 10px;
+    text-align: center;
+    background-color: hsla(187, 41%, 20%, 0.791);
+}
