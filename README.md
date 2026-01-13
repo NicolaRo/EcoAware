@@ -73,21 +73,5 @@ Hit "Calculate Carbon Print" and see your impact.
 
 EcoAware aims to promote environmental awareness through intuitive design and instant feedback. By quantifying your carbon footprint, we hope to spark everyday actions that contribute to a more sustainable future. 🌳
 
-🤝 Contributing
-
-Feel free to fork this repo and suggest new features such as:
-
-🥩 Food consumption emission tracking
-✈️ Air travel CO₂ estimation
-📈 Data visualization (charts, graphs)
-🧾 Monthly tracking and history log
-Pull requests are welcome!
-
-📄 License
-
-This project is licensed under the MIT License.
-
-💬 Contact
 
 Made with ❤️ for the planet.
-For feedback or collaboration: ecoaware.team@example.com
